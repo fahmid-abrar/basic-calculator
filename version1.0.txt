@@ -1,0 +1,164 @@
+Calculator
+____________________________________________________________________
+
+HTML
+__________________________________________
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+
+    <div class="calc">
+
+        <P id="name">C A S I O</P>
+
+        <input id="screen" type="text" readonly>
+
+        <div id="inputButtons">
+            <button class="button" onclick="
+                display = '';
+                document.querySelector('#screen').value = display;">c</button>
+
+
+            <button class="button" onclick="
+                display = display + '1';
+                document.querySelector('#screen').value = display;">1</button>
+
+
+            <button class="button" onclick="
+            display = display + '2';
+            document.querySelector('#screen').value = display;">2</button>
+
+
+            <button class="button" onclick="
+            display = display + '+';
+            document.querySelector('#screen').value = display;">+</button>
+
+
+            <button class="button" onclick="
+            display = display + '3';
+            document.querySelector('#screen').value = display;">3</button>
+
+
+            <button class="button" onclick="
+            display = display + '4';
+            document.querySelector('#screen').value = display; ">4</button>
+
+
+            <button class="button" onclick="
+            display = display + '-';
+            document.querySelector('#screen').value = display;">-</button>
+
+
+            <button class="button" onclick="
+            display = display + '5';
+            document.querySelector('#screen').value = display;">5</button>
+
+
+            <button class="button" onclick="
+            display = display + '6';
+            document.querySelector('#screen').value = display;">6</button>
+
+
+            <button class="button" onclick="
+            display = display + '*';
+            document.querySelector('#screen').value = display;">*</button>
+
+
+            <button class="button" onclick="
+            display = display + '7';
+            document.querySelector('#screen').value = display;">7</button>
+
+
+            <button class="button" onclick="
+            display = display + '8';
+            document.querySelector('#screen').value = display;">8</button>
+
+
+            <button class="button" onclick="
+            display = display + '/';
+            document.querySelector('#screen').value = display;">/</button>
+
+
+            <button class="button" onclick="
+            let result = eval(display);
+            document.querySelector('#screen').value = result;" >=</button>
+
+
+            <button class="button" onclick="
+            display = display + '9';
+            document.querySelector('#screen').value = display;">9</button>
+
+
+            <button class="button" onclick="
+            display = display + '0';
+            document.querySelector('#screen').value = display;">0</button>
+
+
+            <button class="button" onclick="
+            display = display + '.';
+            document.querySelector('#screen').value = display;">.</button>
+
+
+        </div>
+
+    </div>
+
+    <script>
+        let display = ''
+        document.querySelector('#screen').value = display;
+    </script>
+
+    
+</body>
+</html>
+
+
+CSS
+___________________________________________________________
+#inputButtons{
+    padding: 3px;
+    border: 0.5px solid rgb(156, 152, 152); 
+    width: 90%;
+    margin: 2px 1px;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#screen{
+    margin: 6px 0%;
+    /* padding: 7px 0px; */
+    border-radius: 4px;
+    width: 94%;
+    background-color: rgb(192, 187, 187);
+    color: rgba(10, 66, 10, 0.733);
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.calc{
+    border: 1px rgb(247, 182, 182) solid;
+    padding: 8px;
+    width: 35%;
+    background-color:rgba(247, 182, 182, 0.637);
+}
+
+.button{
+    background-color: rgba(240, 194, 134, 0.719);
+    margin: 3px;
+    width: 25%;
+
+}
+
+#name{
+    font-size: 7px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
