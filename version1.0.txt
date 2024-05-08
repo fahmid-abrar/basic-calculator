@@ -162,3 +162,13 @@ ___________________________________________________________
     justify-content: center;
     margin: 0px;
 }
+
+git repo command
+__________________________________________________________
+echo "# basic-calculator" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/fahmid-abrar/basic-calculator.git
+git push -u origin main

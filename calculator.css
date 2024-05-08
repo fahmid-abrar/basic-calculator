@@ -56,3 +56,10 @@ body {
     background-image: linear-gradient(132deg, #6bc2b0 0%, #16A085 100%);
     color: aliceblue;
 }
+
+footer {
+    color: rgb(107, 110, 112);
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

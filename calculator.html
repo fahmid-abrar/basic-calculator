@@ -15,31 +15,86 @@
         
         <!-- button -->
         <div class="btn-placeholder">
-            <button class ="btn">7</button>
-            <button class ="btn">8</button>
-            <button class ="btn">9</button>
-            <button class ="btn" id="yellow-bg">+</button>
-            <button class ="btn">4</button>
-            <button class ="btn">5</button>
-            <button class ="btn">6</button>
-            <button class ="btn" id="yellow-bg">-</button>
-            <button class ="btn">1</button>
-            <button class ="btn">2</button>
-            <button class ="btn">3</button>
-            <button class ="btn" id="yellow-bg">*</button>
-            <button class ="btn">0</button>
-            <button class ="btn" id="red-bg">c</button>
-            <button class ="btn" id="red-bg">=</button>
-            <button class ="btn" id="yellow-bg">/</button>
-            <button class ="btn">.</button>
-            
+            <button class ="btn" onclick="
+                display = display + 7;
+                document.querySelector('.screen').value = display;
+                ">7</button>
+            <button class ="btn" onclick="
+                display = display + 8;
+                document.querySelector('.screen').value = display;
+                ">8</button>
+            <button class ="btn" onclick="
+                display = display + 9;
+                document.querySelector('.screen').value = display;
+                ">9</button>
+            <button class ="btn" onclick="
+                display = display + 4;
+                document.querySelector('.screen').value = display;
+                ">4</button>
+            <button class ="btn" onclick="
+                display = display + 5;
+                document.querySelector('.screen').value = display;
+                ">5</button>
+            <button class ="btn" onclick="
+                display = display + 6;
+                document.querySelector('.screen').value = display;
+                ">6</button>
+            <button class ="btn" onclick="
+                display = display + 1;
+                document.querySelector('.screen').value = display;
+                ">1</button>
+            <button class ="btn" onclick="
+                display = display + 2;
+                document.querySelector('.screen').value = display;">2</button>
+            <button class ="btn" onclick="
+                display = display + 3;
+                document.querySelector('.screen').value = display;
+                ">3</button>
+            <button class ="btn" onclick="
+                display = display + 0;
+                document.querySelector('.screen').value = display;
+                ">0</button>
+            <button class ="btn" onclick="
+                display = display + '.';
+                document.querySelector('.screen').value = display;
+                ">.</button>
+
+            <button class ="btn" id="yellow-bg" onclick="
+                display = display + '+';
+                document.querySelector('.screen').value = display;
+                ">+</button>
+            <button class ="btn" id="yellow-bg" onclick="
+                display = display + '-';
+                document.querySelector('.screen').value = display;
+                ">-</button>
+            <button class ="btn" id="yellow-bg" onclick="
+            display = display + '*';
+            document.querySelector('.screen').value = display;
+            ">*</button>
+            <button class ="btn" id="yellow-bg" onclick="
+            display = display + '/';
+            document.querySelector('.screen').value = display;
+            ">/</button>
+
+
+            <button class ="btn" id="red-bg" onclick="
+                display = '';
+                document.querySelector('.screen').value = display;
+                ">c</button>            
+            <button class ="btn" id="red-bg" onclick="
+                let result = eval (display);
+                display = result;
+                document.querySelector('.screen').value = display;
+                ">=</button>
         </div>
 
     </div>
 
+    <footer>fahmid-abrar-samin 2024</footer>
+
 
     <script>
-        let display = '222';
+        let display = '';
         document.querySelector('.screen').value = display;
     </script>
     
